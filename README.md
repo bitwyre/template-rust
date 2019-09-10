@@ -4,44 +4,70 @@ This is the template for Rust Repository.
 
 Copyright (C) 2019 Bitwyre Technologies LLC
 
-## Build the binary
+## Rust pre-requisites
 
-### Development/Debug build
+### Rust & Cargo
 
 ```bash
-cargo build
+curl https://sh.rustup.rs -sSf | sh
 ```
 
-### Release build
+or update if it's already installed:
 
 ```bash
-cargo build --release
+rustup update
 ```
 
-## Running the program
-
-### Test run
+### Rust components (formatting and code-styling)
 
 ```bash
-cargo test
+rustup component add rls
+rustup component add rustfmt
+rustup component add clippy
 ```
 
-### Benchmark run
+## Running with script
+
+### Apply recommended code formatting
 
 ```bash
-cargo bench
+./run.sh apply-style
 ```
 
-### Development/Debug run
+### Build binaries for debugging
 
 ```bash
-cargo run
+./run.sh build
 ```
 
-### Release run
+### Build binaries for performance
 
 ```bash
-cargo run --release
+./run.sh build-optimize
+```
+
+### Code-style check and preliminary bug finding
+
+```bash
+./run.sh check-style
+```
+
+### Development/Debugging run
+
+```bash
+./run.sh dev
+```
+
+### Unit tests
+
+```bash
+./run.sh test
+```
+
+### Performance run
+
+```bash
+./run.sh
 ```
 
 ## Contributors

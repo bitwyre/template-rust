@@ -1,5 +1,4 @@
 # Rust default
-
 /target
 **/*.rs.bk
 **/*.lock
