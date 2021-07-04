@@ -2,7 +2,7 @@
 
 This is the template for Rust Repository.
 
-Copyright (C) 2019 Bitwyre Technologies LLC
+Copyright (C) 2021 Bitwyre Technologies Holdings Incorporated
 
 ## Rust pre-requisites
 
